@@ -19,7 +19,7 @@
 .work-section {
 margin-top:73px;
 }
-.work-section .sec-tit{
+.work-section .sec-tit {
 width:90%;
 margin:0 auto;
 max-width:1132px;
@@ -35,13 +35,80 @@ position:relative;
 width:100%;
 height:100%;
 }
-.work-section .work-list li a:before{
+.work-section .work-list li a:before {
 display:block;
 position:absolute;
 top:0;
 left:0;
-z-index:9999;
+z-index:10;
+width:100%;
+height:100%;
+background:#3f51b5;
+content:"";
+opacity:0;
+transition:all 0.2s;
+}
+.work-section .work-list li a:hover:before {
+opacity:0.86;
+}
+.work-section .work-list li .info {
+position:absolute;
+top:0;
+left:23px;
+z-index:20;
+opacity:0;
+transition:all 0.3s;
+}
+.work-section .work-list li a:hover .info {
+transform:translateY(23px);
+opacity:1;
+}
+.work-section .work-list li .info h3 {
+margin-bottom:8px;
+font-size:23px;
+color:#ffffff;
+font-weight:normal;
+}
+.work-section .work-list li .info span {
+font-size:11px;
+color:#fff;
+}
+.work-section .work-list li img {
+display:block;
+width:100%;
+max-width:100%;
+height:auto;
+}
+/* 태블릿용 CSS */
+@media all and (min-width:768px) {
+/* 태블릿 WORK 영역 CSS */
+.work-section {
+margin-top:118px;
+}
+.work-section .sec-tit {
+margin-bottom:76px;
+}
+.work-section .work-list li {
+float:left;
+width:50%;
+}
+.work-section .work-list li .info {
+left:37px;
+}
+.work-section .work-list li a:hover .info {
+transform:translateY(37px);
+}
 
+}
+
+/* PC용 WORK영역 CSS */
+@media all and (min-width:1132px) {
+.work-section .sec-tit {
+text-align:left;
+}
+.work-section .work-list li {
+width:25%;
+}
 }
 </style>
 <script src="/resources/js/jquery.min.js"></script>
@@ -55,7 +122,7 @@ z-index:9999;
 	<div id="wrap">
 		<header class="header cfixed">
 			<h1 class="logo">
-				<a href="">prortr</a>
+				<a href="">LOGO</a>
 			</h1>
 			<nav>
 				<ul class="gnb">
@@ -73,75 +140,75 @@ z-index:9999;
 <h2 class="sec-tit">WORK</h2>
 <ul class="work-list">
 <li>
-<a href="#">
+<a href="#" onclick="return false">
 <div class="info">
 <h3>작업1</h3>
 <span>소스/작업1</span>
 </div>
-<img src="/resources/images/chair.jpg" alt="">
+<img src="/resources/images/summer.jpg" alt="">
 </a>
 </li>
 <li>
-<a href="#">
+<a href="#" onclick="return false">
 <div class="info">
 <h3>작업1</h3>
 <span>소스/작업1</span>
 </div>
-<img src="/resources/images/chair.jpg" alt="">
+<img src="/resources/images/summer.jpg" alt="">
 </a>
 </li>
 <li>
-<a href="#">
+<a href="#" onclick="return false">
 <div class="info">
 <h3>작업1</h3>
 <span>소스/작업1</span>
 </div>
-<img src="/resources/images/chair.jpg" alt="">
+<img src="/resources/images/summer.jpg" alt="">
 </a>
 </li>
 <li>
-<a href="#">
+<a href="#" onclick="return false">
 <div class="info">
 <h3>작업1</h3>
 <span>소스/작업1</span>
 </div>
-<img src="/resources/images/chair.jpg" alt="">
+<img src="/resources/images/summer.jpg" alt="">
 </a>
 </li>
 <li>
-<a href="#">
+<a href="#" onclick="return false">
 <div class="info">
 <h3>작업1</h3>
 <span>소스/작업1</span>
 </div>
-<img src="/resources/images/chair.jpg" alt="">
+<img src="/resources/images/summer.jpg" alt="">
 </a>
 </li>
 <li>
-<a href="#">
+<a href="#" onclick="return false">
 <div class="info">
 <h3>작업1</h3>
 <span>소스/작업1</span>
 </div>
-<img src="/resources/images/chair.jpg" alt="">
+<img src="/resources/images/summer.jpg" alt="">
 </a>
 </li>
 <li>
-<a href="#">
+<a href="#" onclick="return false">
 <div class="info">
 <h3>작업1</h3>
 <span>소스/작업1</span>
 </div>
-<img src="/resources/images/chair.jpg" alt="">
+<img src="/resources/images/summer.jpg" alt="">
 </a>
 </li>
 <li>
-<a href="#">
+<a href="#" onclick="return false">
 <div class="info">
 <h3>작업1</h3>
 <span>소스/작업1</span>
 </div>
-<img src="/resources/images/chair.jpg" alt="">
+<img src="/resources/images/summer.jpg" alt="">
 </a>
 </li>
 </ul>

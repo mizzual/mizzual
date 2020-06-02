@@ -15,7 +15,7 @@
 	<H4>HTML 의 태그</H4>
 	<H5>HTML 의 태그</H5>
 	<a href="/htmltest">페이지 다시 로딩-불러오기</a>
-	<img src="/resources/images/chair.jpg" alt="의자사진">
+	<img src="/resources/images/summer.jpg" alt="해바라기사진">
 	<p>
 		<strong>이것은</strong> 문단입니다.<br> <b>이것은</b> 문단입니다.
 	</p>
@@ -51,7 +51,7 @@
 	<th>성적</th>
 	</tr>
 	<tr>
-	<td>mizzual</td>
+	<td>김일국</td>
 	<td>15</td>
 	</tr>
 	<tr>

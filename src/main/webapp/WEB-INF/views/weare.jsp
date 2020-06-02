@@ -24,10 +24,9 @@ text-align:center;
 margin-bottom:30px;
 }
 .display-section .desc {
-font-family:"맑은 고딕";
-color:#4C4C4C;
+font-family:"굴림";
+color:#616161;
 line-height:1.9;
-font-weight:bold;
 }
 /* We Are 내용 영역 CSS */
 .promotion-section {
@@ -38,23 +37,81 @@ margin-top:52px;
 text-align:center;
 }
 .promotion-section .promo-list li:first-child {
-margin-top:-30px;
+margin-top: 0px;
 }
 .promotion-section .promo-list li img {
-height:150px;
+height:202px;
 }
 .promotion-section .promo-list li h3 {
 margin:29px 0 20px 0;
-color:#4C4C4C;
+color:#3f51b5;
 font-weight:normal;
 }
 .promotion-section .promo-list li p {
 font-size:14px;
-font-family:"맑은 고딕";
+font-family:"궁서";
 color:#616161;
 line-height:1.5;
 }
+/* 태블릿용 CSS */
+@media all and (min-width:768px) {
 
+.promotion-section .promo-list li img {
+height:102px;
+}
+.display-section {
+margin-top:95px;
+}
+/* 태블릿 WE ARE 내용 영역 */
+.promotion-section {
+margin-top:110px;
+}
+.promotion-section .promo-list li {
+float:left; /* 세로로 나열된 컨텐츠를 가로로 배치 하는 역할 */
+width:23.046875%; /* 177px / 768px */ 
+margin-left:2.60416666666667%;
+/* 20px / 768px */
+margin-top:0;
+}
+.promotion-section .promo-list li:first-child {
+margin-left:0;
+}
+
+}
+/* PC용 CSS */
+@media all and (min-width:1132px) {
+/* PC WE ARE 영역 CSS */
+.display-section {
+text-align:left;
+}
+.display-section .sec-tit {
+float:left;
+margin-bottom:0;
+}
+.display-section .desc {
+position:relative;
+float:right;
+padding-left:20px;
+font-family:"바탕";
+color:#616161;
+line-height:1.9;
+}
+.display-section .desc:before {
+display:block;
+position:absolute;
+top:9px;
+left:0;
+width:2px;
+height:44px;
+background: #4d68ea;
+content:"";
+}
+/* PC WE ARE 내용 영역 CSS */
+.promotion-section .promo-list li {
+width:23.674911111%;
+margin-left:1.7667844444%;
+}
+}
 </style>
 <script src="/resources/js/jquery.min.js"></script>
 <script src="/resources/js/common.js"></script>
@@ -67,7 +124,7 @@ line-height:1.5;
 	<div id="wrap">
 		<header class="header cfixed">
 			<h1 class="logo">
-				<a href="">prortr</a>
+				<a href="">LOGO</a>
 			</h1>
 			<nav>
 				<ul class="gnb">
@@ -87,7 +144,7 @@ line-height:1.5;
 				<div class="container">
 					<h2 class="sec-tit">WE ARE</h2>
 					<p class="desc">
-						"prortr은 공간과 제품을 나무로 만드는 디자인스튜디오입니다." <br> "또한 우드카빙 클래스를 운영하는 교육장소 입니다."
+						"휴먼 교육센터 디지털 컨버전스 과정 입니다." <br> "그리고, 지금은 화면 설계 시간 입니다."
 					</p>
 				</div>
 			</section>
@@ -95,22 +152,22 @@ line-height:1.5;
 			<section class="promotion-section">
 				<div class="container">
 					<ul class="promo-list">
-						<li><a href="#"> <img src="/resources/images/chair.jpg"
+						<li><a href="#" onclick="return false"> <img src="/resources/images/summer.jpg"
 								alt="">
 								<h3>HOME</h3>
 								<p>휴면 교육센터 디지털 컨버전스 과정 입니다.</p>
 						</a></li>
-						<li><a href="#"> <img src="/resources/images/chair.jpg"
+						<li><a href="#" onclick="return false"> <img src="/resources/images/summer.jpg"
 								alt="">
 								<h3>HOME</h3>
 								<p>휴면 교육센터 디지털 컨버전스 과정 입니다.</p>
 						</a></li>
-						<li><a href="#"> <img src="/resources/images/chair.jpg"
+						<li><a href="#" onclick="return false"> <img src="/resources/images/summer.jpg"
 								alt="">
 								<h3>HOME</h3>
 								<p>휴면 교육센터 디지털 컨버전스 과정 입니다.</p>
 						</a></li>
-						<li><a href="#"> <img src="/resources/images/chair.jpg"
+						<li><a href="#" onclick="return false"> <img src="/resources/images/summer.jpg"
 								alt="">
 								<h3>HOME</h3>
 								<p>휴면 교육센터 디지털 컨버전스 과정 입니다.</p>
