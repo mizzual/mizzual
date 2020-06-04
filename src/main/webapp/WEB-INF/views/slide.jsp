@@ -180,7 +180,7 @@ body header .row #gnb, body header .row {
 body header .row #brand {
 	background: url(/resources/images/bauhaus.png) no-repeat 0% 60%;
 	height: 90px;
-	width: 300px;
+	width: 90px;
 	margin: 0px;
 	text-indent: -10000px;
 }
@@ -287,8 +287,8 @@ body footer {
 }
 
 body footer p {
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	background: url(/resources/images/bauhaus.png) no-repeat 100% 50%;
 }
 

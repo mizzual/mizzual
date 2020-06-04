@@ -18,15 +18,15 @@
 <style>
 .go_top {
 	position: fixed;
-    right: 20px;
-    bottom: 112px;
-    text-align: center;
-    background: red;
-    z-index: 100;
-    padding: 20px;
-    opacity: 0.5;
-    color: blue !important;
-    }
+	right: 20px;
+	bottom: 112px;
+	text-align: center;
+	background: red;
+	z-index: 100;
+	padding: 20px;
+	opacity: 0.5;
+	color: blue !important;
+}
 </style>
 <script src="/resources/js/jquery.min.js"></script>
 <script src="/resources/js/common.js"></script>
@@ -44,7 +44,8 @@
 	<div id="wrap">
 		<header class="header cfixed">
 			<h1 class="logo">
-				<a href="">LOGO</a>
+			<img src=/resources/images/logo.jpg>
+				<a href="">trorpr</a>
 			</h1>
 			<nav>
 				<ul class="gnb">
@@ -181,8 +182,8 @@
 						<fieldset class="cfixed">
 							<legend class="blind">CONTACT US</legend>
 							<div class="form">
-								<label for="name" class="blind">name</label> 
-								<input type="text" id="name" placeholder="Name"> <label for="phone"
+								<label for="name" class="blind">name</label> <input type="text"
+									id="name" placeholder="Name"> <label for="phone"
 									class="blind">phone</label> <input type="tel" id="phone"
 									placeholder="Phone"> <label for="email" class="blind">email</label>
 								<input type="email" id="email" placeholder="Email Address">
@@ -193,40 +194,45 @@
 							</div>
 						</fieldset>
 						<div class="send-btn">
-<button type="button" class="" data-toggle="modal" data-target="#exampleModal">메세지 보내기</button>
+							<button type="button" class="" data-toggle="modal"
+								data-target="#exampleModal">메세지 보내기</button>
 						</div>
 					</form>
 				</div>
 			</div>
 		</section>
-
 		<footer class="footer">
-			<p class="copyright">LOGO</p>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.449965430947!2d127.13927831545723!3d36.83169827362542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b28898cf8f197%3A0x85f97ff6ce06df58!2z65GQ7KCV7JWE7YGs66Gc7YWU!5e0!3m2!1sko!2skr!4v1590993136985!5m2!1sko!2skr"
+				width="600" height="450" frameborder="0" style="border: 0;"
+				allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			<p class="copyright">trorpr</p>
 		</footer>
 	</div>
 	<a href="#" class="s_point"><p class="go_top">TOP</p></a>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <input class="form-control" type="text" id="message" placeholder="메세지 내용을 입력해 주세요.">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-info">수정</button>
-        <button type="button" class="btn btn-danger">삭제</button>
-        <button type="button" class="btn" data-dismiss="modal">닫기</button>
-      </div>
-    </div>
-  </div>
-</div>
-
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<input class="form-control" type="text" id="message"
+						placeholder="메세지 내용을 입력해 주세요.">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info">수정</button>
+					<button type="button" class="btn btn-danger">삭제</button>
+					<button type="button" class="btn" btn-primary"data-dismiss="modal">닫기</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
